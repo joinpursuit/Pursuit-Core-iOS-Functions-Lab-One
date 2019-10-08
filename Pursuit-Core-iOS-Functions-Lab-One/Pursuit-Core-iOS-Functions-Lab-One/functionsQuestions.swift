@@ -67,14 +67,3 @@ func uniqueCharacters(in str: String) -> [Character] {
 func isPalindrome(str: String) -> Bool {
     return false
 }
-
-// Question Nine
-
-// Given a String as input, rotate all a-z characters by one. This is called ROT-1 encryption.
-// HINT: Use unicode values
-
-func rotOneEncrypt(_ str: String) -> String {
-    return ""
-}
-
-
