@@ -64,7 +64,7 @@ func removeNils(from arr: [Int?]) -> [Int] {
 func frequencyDictionary(of str: String) -> [Character: Int] {
     var frequencyDictionary = [Character: Int]()
     for char in str {
-        frequencyDictionary[char] = (frequencyDictionary[char] ?? 1) + 1
+        frequencyDictionary[char] = (frequencyDictionary[char] ?? 0) + 1
     }
     return frequencyDictionary
 }
