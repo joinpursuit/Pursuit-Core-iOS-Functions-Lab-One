@@ -112,15 +112,4 @@ class Pursuit_Core_iOS_Functions_Lab_OneTests: XCTestCase {
             XCTAssertEqual(output, testCase.expectedOutput, "Was expecting \(testCase.expectedOutput) for input \"\(testCase.input)\", but got \(output)")
         }
     }
-    func testRotOneEncrypt() {
-        let testCases = [
-            SingleInputTestCase(input: "Hello World!", expectedOutput: "Ifmmp Xpsme!"),
-            SingleInputTestCase(input: "Secret Message", expectedOutput: "Tfdsfu Nfttbhf"),
-            SingleInputTestCase(input: "This is also a secret message", expectedOutput: "Uijt jt bmtp b tfdsfu nfttbhf"),
-        ]
-        for testCase in testCases {
-            let output = rotOneEncrypt(testCase.input)
-            XCTAssertEqual(output, testCase.expectedOutput, "Was expecting \(testCase.expectedOutput) for input \"\(testCase.input)\", but got \(output)")
-        }
-    }
 }
